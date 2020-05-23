@@ -21,7 +21,7 @@ public class Max3 {
 			max = c;
 
 		System.out.println("최댓값은 " + max + "입니다.");
-		
+
 		sc.close();
 	}
 }
