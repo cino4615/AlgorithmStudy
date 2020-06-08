@@ -4,22 +4,35 @@ package chap01.prac;
 public class Prac12 {
 
 	public static void main(String[] args) {
+		System.out.print("   |");
+		for (int i = 1; i < 10; i++) {
+			System.out.printf("%3d", i);
+		}
+		System.out.println("\n---+--------------------------");
 
-		int j = 0;
-		for (int i = 0; i < 10; i++) {
-			if (i == 0)
-				System.out.println(" ");
-			else
-				System.out.print(i + "|");
-			for (j = 0; j < 10; j++) {
-				if (j == 0)
-					System.out.println(" ");
-				if (j == 9)
-					System.out.println(i * j + " ");
-				else
-					System.out.print(i * j + " ");
-
+		for (int i = 1; i < 10; i++) {
+			System.out.printf("%2d |", i);
+			for (int j = 1; j < 10; j++) {
+				System.out.printf("%3d", i * j);
 			}
+			System.out.println("");
 		}
 	}
+
+//	class Multi99TableEx_01_12 {
+//		public static void main(String[] args) {
+//			System.out.print("   |");
+//			for (int i = 1; i <= 9; i++)
+//				System.out.printf("%3d", i);
+//			System.out.println("\n---+---------------------------");
+//
+//			for (int i = 1; i <= 9; i++) {
+//				System.out.printf("%2d |", i);
+//				for (int j = 1; j <= 9; j++)
+//					System.out.printf("%3d", i * j);
+//				System.out.println();
+//			}
+//		}
+//	}
+
 }
