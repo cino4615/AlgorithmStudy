@@ -16,7 +16,7 @@ public class Marathon2 {
 		for (String key : hm.keySet()) {
 			if (hm.get(key) != 0) {
 				answer = key;
-			}
+			} 
 		}
 		System.out.println(answer);
 	}
