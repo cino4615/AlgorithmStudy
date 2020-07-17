@@ -23,6 +23,9 @@ public class ListClientExampleTest {
 		ListClientExample lce = new ListClientExample();
 		@SuppressWarnings("rawtypes")
 		List list = lce.getList();
+		//assertThat
+		//첫번째 파라미터는 비교 대상의 실제값을 
+		//두번째 파라미터로는 비교로직이 담긴 Matcher가 사용되게됩니다.
 		assertThat(list, instanceOf(ArrayList.class) );
 	}
 
